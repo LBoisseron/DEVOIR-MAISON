@@ -3,7 +3,12 @@ body {
 };
 
 .collapse navbar-collapse {
+    width: 100%;
     display: block;
     margin: auto;
 }
 
+.container {
+    width: 950px;
+    margin: auto;
+}
