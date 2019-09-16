@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<div class="header">
+<div class="bandeau">
     <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <img src="./13-Atelier Pratique/assets/img/iPhone.png" alt="iPhone"/>
@@ -22,9 +22,6 @@
 </div>
 
 <div class="container">
-
-
-
 
     <form id="contact">
         <div class="row">
@@ -52,13 +49,13 @@
 
         <div class="form-group" class="invalid-feedback">
           <label for="exampleFormControlTextarea1"></label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="7" placeholder="Votre message"></textarea>
+          <textarea class="form-control" id="message" rows="7" placeholder="Votre message"></textarea>
         </div>
-        <div class="row">
-          <div class="col">
-              <button type="submit" class="btn btn-primary">Envoyer ma demande</button>
-          </div>
-        </div>
+        
+        
+          <button type="submit" class="btn btn-primary">Envoyer ma demande</button>
+        
+        
 
       </form>
     
@@ -74,7 +71,42 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 <!--MON SCRIPT JS-->
-<script src="./13-Atelier Pratique/atelierpratique.js"></script>
+<script src="./atelierPratique.js"></script>
+
+<script>
+
+const nomPrenom = $('#nomPrenom');
+const email = $('#email');
+const sujet = $('#sujet');
+const message = $('#message');
+
+$('#contact').submit(function(e) {
+        e.preventDefault();
+
+if(nomPrenom.val() == ' ') {
+  console.log('Nom Prénom manquants');
+  nomPrenom.addClass('is-invalid');
+}
+
+if(email.val() == ' ') {
+  console.log('email manquant');
+  email.addClass('is-invalid')
+}
+
+if(sujet.val() == ' ') {
+  console.log('sujet manquant');
+  sujet.addClass('is-invalid')
+}
+
+if(message.val() == ' ') {
+  console.log('message manquant');
+  message.addClass('is-invalid')
+}
+
+});
+
+
+</script>
 
 
 

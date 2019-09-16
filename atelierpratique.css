@@ -2,13 +2,54 @@ body {
     background-color: black;
 };
 
-.collapse navbar-collapse {
-    width: 100%;
-    display: block;
+header {
+    text-align: center;
+}
+
+.nav-link {
+    padding-right: 15px;
+}
+
+#hero img {
+    max-width: 100%;
     margin: auto;
 }
 
+#navbarText {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    background-color: #141414;
+};
+
+
 .container {
     width: 950px;
-    margin: auto;
+    text-align: center;
+    
+};
+
+#annonce h2 {
+    width: 100px;
+    height: 100px;
+    text-align: center;
 }
+
+.titre {
+    text-align: center;
+}
+
+#titreForm {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.bandeau {
+    background: white;
+    padding-top: 3rem;
+}
+
+
