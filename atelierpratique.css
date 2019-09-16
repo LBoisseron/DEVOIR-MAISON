@@ -1,0 +1,9 @@
+body {
+    background-color: black;
+};
+
+.collapse navbar-collapse {
+    display: block;
+    margin: auto;
+}
+
